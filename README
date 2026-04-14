@@ -1,0 +1,117 @@
+# 🍎 AI-Based Diet Recommendation System
+
+An intelligent web application that provides personalized diet recommendations based on user inputs like weight, height, and gender. The system calculates BMI, determines fitness goals automatically, and suggests appropriate diet plans along with a visual nutritional breakdown.
+
+---
+
+## 🚀 Features
+
+* 📊 **Automatic BMI Calculation**
+* 🎯 **Smart Goal Detection**
+
+  * Weight Gain
+  * Maintain
+  * Weight Loss
+* 🧍 **Gender-Based Diet Recommendation**
+* 🧠 **AI Model Integration (Decision Tree)**
+* 🍽 **Personalized Diet Suggestions**
+* 📈 **Dynamic Pie Chart Visualization**
+
+  * Carbohydrates
+  * Proteins
+  * Fats
+* 🎨 **Responsive and Clean UI**
+
+---
+
+## 🧠 How It Works
+
+1. User enters:
+
+   * Weight (kg)
+   * Height (m)
+   * Gender
+
+2. The system:
+
+   * Calculates BMI
+   * Determines fitness goal automatically
+   * Uses a trained ML model to recommend diet
+   * Generates a dynamic macronutrient distribution chart
+
+---
+
+## 📊 Formula Used
+
+BMI is calculated using:
+
+BMI = weight / (height²)
+
+---
+
+## 🛠 Tech Stack
+
+* **Frontend:** HTML, CSS
+* **Backend:** Python (Flask)
+* **Machine Learning:** Scikit-learn (Decision Tree)
+* **Visualization:** Matplotlib
+
+---
+
+## 📁 Project Structure
+
+```
+diet_ai_project/
+│
+├── app.py
+├── templates/
+│   ├── index.html
+│   └── result.html
+├── static/
+│   ├── style.css
+│   └── chart.png
+```
+
+---
+
+## ▶️ How to Run
+
+1. Install dependencies:
+
+```
+pip install flask pandas scikit-learn matplotlib
+```
+
+2. Run the application:
+
+```
+python app.py
+```
+
+3. Open in browser:
+
+```
+http://127.0.0.1:5000
+```
+
+---
+
+## 💡 Future Improvements
+
+* 📅 Weekly meal planner
+* 📊 Interactive charts (Chart.js)
+* 🧍 Age-based recommendations
+* 🏃 Exercise suggestions
+* 🤖 Chatbot integration
+
+---
+
+## 👩‍💻 Author
+
+Developed by *Keerthana* 🚀
+
+---
+
+## ⭐ If you like this project
+
+Give it a ⭐ on GitHub and share it!

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📊 Your Result</h1>
+
+    <h2>BMI: {{ bmi }}</h2>
+    <h2>Gender: {{ gender }}</h2>
+    <h2>Goal: {{ goal }}</h2>
+    <h3>Diet: {{ diet }}</h3>
+
+    <h2>🍽 Diet Composition</h2>
+
+    <img src="/static/{{ chart }}">
+
+    <br><br>
+    <a href="/">🔙 Go Back</a>
+
+</div>
+
+</body>
+</html>

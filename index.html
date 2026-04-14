@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Diet</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🍎 AI Diet Recommendation</h1>
+
+    <form action="/predict" method="POST">
+
+        <input type="number" step="0.1" name="weight" placeholder="Weight (kg)" required>
+
+        <input type="number" step="0.01" name="height" placeholder="Height (m)" required>
+
+        <select name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <button type="submit">Get Diet Plan</button>
+
+    </form>
+</div>
+
+</body>
+</html>

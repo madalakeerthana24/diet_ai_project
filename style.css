@@ -1,0 +1,43 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+    font-size: 28px;
+}
+
+input, select {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    border-radius: 12px;
+}
+
+img {
+    width: 400px;  /* BIG PIE CHART */
+    margin-top: 20px;
+}
