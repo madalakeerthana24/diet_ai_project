@@ -1,30 +1,52 @@
-# 🍎 AI-Based Diet Recommendation System
+# 🍎 Machine Learning-Based Diet Recommendation System
 
-An intelligent web application that provides personalized diet recommendations based on user inputs like weight, height, and gender. The system calculates BMI, determines fitness goals automatically, and suggests appropriate diet plans along with a visual nutritional breakdown.
+A Flask-based web application that provides personalized diet recommendations using **Body Mass Index (BMI)**, **gender**, and a **Decision Tree Machine Learning model**. The application calculates BMI, predicts the user's fitness goal, recommends a suitable diet plan, and displays a macronutrient distribution chart.
 
 ---
 
-## 🚀 Features
+## 📖 Project Overview
 
-* 📊 **Automatic BMI Calculation**
-* 🎯 **Smart Goal Detection**
+Maintaining a healthy diet is essential for overall well-being. This project helps users receive personalized diet recommendations by analyzing their BMI and gender. The application automatically determines whether the user should gain weight, maintain weight, or lose weight, then uses a **Decision Tree Classifier** to recommend an appropriate diet plan.
+
+The project combines **Machine Learning**, **Python Flask**, and **Data Visualization** to create an interactive healthcare application.
+
+---
+
+## ✨ Features
+
+* ✅ User-friendly web interface
+* ✅ Automatic BMI Calculation
+* ✅ Fitness Goal Prediction
 
   * Weight Gain
-  * Maintain
+  * Maintain Weight
   * Weight Loss
-* 🧍 **Gender-Based Diet Recommendation**
-* 🧠 **AI Model Integration (Decision Tree)**
-* 🍽 **Personalized Diet Suggestions**
-* 📈 **Dynamic Pie Chart Visualization**
-
-  * Carbohydrates
-  * Proteins
-  * Fats
-* 🎨 **Responsive and Clean UI**
+  * Strict Fat Loss
+* ✅ Machine Learning-based Diet Recommendation
+* ✅ Gender-specific Macronutrient Distribution
+* ✅ Dynamic Nutrition Pie Chart
+* ✅ Lightweight Flask Web Application
 
 ---
 
-## 🧠 How It Works
+## 🧠 Machine Learning
+
+The application uses a **Decision Tree Classifier** from **Scikit-learn**.
+
+### Training Features
+
+* BMI
+* Fitness Goal
+
+### Prediction Output
+
+* Recommended Diet Plan
+
+The model is trained using a sample dataset containing different BMI ranges, fitness goals, and corresponding diet recommendations.
+
+---
+
+## ⚙️ How It Works
 
 1. User enters:
 
@@ -32,33 +54,60 @@ An intelligent web application that provides personalized diet recommendations b
    * Height (m)
    * Gender
 
-2. The system:
+2. The application:
 
    * Calculates BMI
-   * Determines fitness goal automatically
-   * Uses a trained ML model to recommend diet
-   * Generates a dynamic macronutrient distribution chart
+   * Determines the user's fitness goal
+   * Predicts a suitable diet using the Decision Tree model
+   * Generates a macronutrient distribution chart
 
 ---
 
-## 📊 Formula Used
+## 📊 BMI Formula
 
-BMI is calculated using:
-
-BMI = weight / (height²)
-
----
-
-## 🛠 Tech Stack
-
-* **Frontend:** HTML, CSS
-* **Backend:** Python (Flask)
-* **Machine Learning:** Scikit-learn (Decision Tree)
-* **Visualization:** Matplotlib
+```
+BMI = Weight / (Height × Height)
+```
 
 ---
 
-## 📁 Project Structure
+## 🥗 Sample Macronutrient Distribution
+
+| Goal            | Carbs | Protein | Fats |
+| --------------- | ----: | ------: | ---: |
+| Weight Gain     |   55% |     25% |  20% |
+| Maintain Weight |   45% |     30% |  25% |
+| Weight Loss     |   35% |     40% |  25% |
+
+*Macronutrient values vary based on gender and fitness goal.*
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+
+* HTML5
+* CSS3
+
+### Backend
+
+* Python
+* Flask
+
+### Machine Learning
+
+* Scikit-learn
+* Decision Tree Classifier
+* Pandas
+
+### Data Visualization
+
+* Matplotlib
+
+---
+
+## 📂 Project Structure
 
 ```
 diet_ai_project/
@@ -67,28 +116,72 @@ diet_ai_project/
 ├── templates/
 │   ├── index.html
 │   └── result.html
+│
 ├── static/
 │   ├── style.css
 │   └── chart.png
+│
+├── README.md
+└── requirements.txt
 ```
 
 ---
 
-## ▶️ How to Run
+## 📸 Screenshots
 
-1. Install dependencies:
+### 🏠 Home Page
+
+(Add your Home Page screenshot here)
 
 ```
+screenshots/home_page.png
+```
+
+### 🥗 Diet Recommendation Result
+
+(Add your Result Page screenshot here)
+
+```
+screenshots/result_page.png
+```
+
+### 📈 Nutrition Chart
+
+(Add your Nutrition Chart screenshot here)
+
+```
+screenshots/chart.png
+```
+
+---
+
+## 🚀 Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/your-username/diet_ai_project.git
+```
+
+### Navigate to the Project Folder
+
+```bash
+cd diet_ai_project
+```
+
+### Install Dependencies
+
+```bash
 pip install flask pandas scikit-learn matplotlib
 ```
 
-2. Run the application:
+### Run the Application
 
-```
+```bash
 python app.py
 ```
 
-3. Open in browser:
+### Open in Browser
 
 ```
 http://127.0.0.1:5000
@@ -96,22 +189,63 @@ http://127.0.0.1:5000
 
 ---
 
-## 💡 Future Improvements
+## 🔧 Skills Demonstrated
 
-* 📅 Weekly meal planner
-* 📊 Interactive charts (Chart.js)
-* 🧍 Age-based recommendations
-* 🏃 Exercise suggestions
-* 🤖 Chatbot integration
+* Python Programming
+* Flask Web Development
+* Machine Learning
+* Decision Tree Classification
+* BMI Calculation
+* Data Visualization
+* HTML & CSS
+* Backend Development
+* Problem Solving
+
+---
+
+## 🚀 Future Enhancements
+
+* User Login and Authentication
+* Personalized Weekly Meal Planner
+* Calorie Requirement Calculator
+* Age-based Diet Recommendation
+* Exercise Recommendation System
+* Food Database Integration
+* Interactive Charts using Chart.js
+* Database Integration (SQLite/MySQL)
+* Nutrition History Tracking
+
+---
+
+## 🎯 Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+* Developing Flask Web Applications
+* Building and training a Machine Learning model
+* Integrating Machine Learning with a Web Application
+* Data Preprocessing using Pandas
+* Visualizing data using Matplotlib
+* Handling user input and backend logic
 
 ---
 
 ## 👩‍💻 Author
 
-Developed by *Keerthana* 🚀
+**Madala Sri Rama Satya Keerthana**
+
+B.Tech – Artificial Intelligence
+
+GitHub: https://github.com/madalakeerthana24
 
 ---
 
-## ⭐ If you like this project
+## 📄 License
 
-Give it a ⭐ on GitHub and share it!
+This project is developed for educational purposes, portfolio showcase, and internship applications.
+
+---
+
+## ⭐ Support
+
+If you found this project useful, please consider giving it a ⭐ on GitHub.
